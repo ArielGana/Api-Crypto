@@ -1,0 +1,228 @@
+/* Reset CSS básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#icon {
+  width: 200px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #669934;
+  color: #333;
+}
+
+nav {
+  background-color: #07267b;
+  color: #669934;
+  padding: 10px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* Estilos para las secciones principales */
+section {
+  padding: 40px 20px;
+}
+.crypto-sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.crypto-sidebar ul li img.crypto-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+}
+
+.crypto-sidebar ul li span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Sección de Inicio */
+.home {
+  background-color: #669934;
+  color: #669934;
+  text-align: center;
+}
+
+/* Sección de Características */
+.features {
+  background-color: #669934;
+  padding: 40px 20px;
+  margin-left: 30%;
+  font-size: 50px;
+}
+
+/* Sección de Criptomonedas */
+.crypto {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #669934;
+}
+
+.crypto .container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crypto-sidebar {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.crypto-sidebar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.crypto-sidebar ul {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.crypto-sidebar ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.crypto-sidebar ul li:hover {
+  background-color: #eee;
+}
+
+.crypto-content {
+  width: 70%;
+}
+
+#cryptoChart {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Contacto */
+.contact {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+.titulo {
+  display: flex;
+  align-items: center;
+}
+.crypto-sidebar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#cryptoSearch {
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.crypto-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cryptoDetails {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 101%;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.crypto-header {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#cryptoLogo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#cryptoName {
+  font-size: 24px;
+}
+
+#cryptoPrice {
+  font-size: 20px;
+  color: green;
+  text-align: right;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.crypto-content canvas {
+  width: 100% !important;
+  height: 400px !important;
+  max-width: 800px;
+}

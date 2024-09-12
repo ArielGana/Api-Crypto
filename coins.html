@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepe Crypto - Página de Inicio</title>
+    <link rel="stylesheet" href="css/stylecoin.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.1/dist/chartjs-plugin-zoom.min.js"></script>
+    <!-- Para gráficos -->
+  </head>
+  <body>
+    <!-- Navegación -->
+    <nav>
+      <div class="container">
+        <img id="icon" src="images/pepe-meme.gif" alt="Pepe Meme" />
+        <h1><a href="#">Pepe Crypto</a></h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+
+          <li><a href="coins.html">Criptomonedas</a></li>
+          <!-- Nueva sección -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="home" class="home">
+      <!-- Contenido de la sección de inicio -->
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="features" class="features">
+      <div class="titulo"><h1>Buscador Crypto</h1></div>
+
+      <!-- Contenido de la sección de características -->
+    </section>
+
+    <section id="crypto" class="crypto">
+      <div class="container">
+        <div class="crypto-sidebar">
+          <input
+            type="text"
+            id="cryptoSearch"
+            placeholder="Buscar criptomoneda..."
+          />
+          <ul id="cryptoList">
+            <!-- La lista de criptomonedas se llenará con JavaScript -->
+          </ul>
+        </div>
+
+        <div class="crypto-content">
+          <!-- Detalles de la criptomoneda seleccionada -->
+          <div id="cryptoDetails">
+            <div class="crypto-header">
+              <img id="cryptoLogo" src="" alt="Logo de Criptomoneda" />
+              <h2 id="cryptoName"></h2>
+            </div>
+            <p id="cryptoPrice"></p>
+          </div>
+
+          <!-- Gráfico -->
+          <canvas id="cryptoChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/coin.js"></script>
+  </body>
+</html>
